@@ -38,6 +38,12 @@ const content = {
     toolkit: "Toolkit",
     toolkitTitle: "Deep backend foundations. Broad delivery context.",
     skillLabels: ["Core", "Data", "Quality", "Delivery"],
+    credentials: "Foundations",
+    credentialsTitle: "Education and languages.",
+    credentialsItems: [
+      ["Education", "Computer Science", "Polytechnic of Leiria", "Academic foundation in software engineering, preceded by technical studies in information systems installation and maintenance."],
+      ["Languages", "Portuguese & English", "Native Portuguese · Advanced English", "Comfortable working, documenting and collaborating in both Portuguese and English-speaking environments."],
+    ],
     beyond: "Beyond the stack",
     quote: <>“Good engineering makes complexity <em>understandable</em> — then makes it useful.”</>,
     about: [
@@ -84,6 +90,12 @@ const content = {
     toolkit: "Tecnologias",
     toolkitTitle: "Bases sólidas de backend. Contexto alargado de entrega.",
     skillLabels: ["Base", "Dados", "Qualidade", "Entrega"],
+    credentials: "Formação",
+    credentialsTitle: "Educação e idiomas.",
+    credentialsItems: [
+      ["Educação", "Engenharia Informática", "Politécnico de Leiria", "Formação académica em engenharia de software, antecedida por estudos técnicos em instalação e manutenção de sistemas informáticos."],
+      ["Idiomas", "Português e inglês", "Português nativo · Inglês avançado", "Experiência a trabalhar, documentar e colaborar em contextos profissionais tanto em português como em inglês."],
+    ],
     beyond: "Para além da tecnologia",
     quote: <>“Boa engenharia torna a complexidade <em>compreensível</em> — e depois torna-a útil.”</>,
     about: [
@@ -175,6 +187,11 @@ export default function Home() {
       </section>
 
       <section className="section toolkit-section"><div className="section-heading compact"><p className="section-kicker">{copy.toolkit}</p><h2>{copy.toolkitTitle}</h2></div><div className="skills-grid">{skillGroups.map((skills, index) => <article key={copy.skillLabels[index]}><div className="skill-label"><span>0{index + 1}</span>{copy.skillLabels[index]}</div><ul>{skills.map(skill => <li key={skill}>{skill}</li>)}</ul></article>)}</div></section>
+
+      <section className="section credentials-section">
+        <div className="section-heading compact"><p className="section-kicker">{copy.credentials}</p><h2>{copy.credentialsTitle}</h2></div>
+        <div className="credentials-grid">{copy.credentialsItems.map((item, index) => <article key={item[0]}><span className="credential-number">0{index + 1}</span><p>{item[0]}</p><h3>{item[1]}</h3><strong>{item[2]}</strong><div>{item[3]}</div></article>)}</div>
+      </section>
 
       <section className="section about-section" id="about"><div className="about-statement"><p className="section-kicker">{copy.beyond}</p><blockquote>{copy.quote}</blockquote></div><div className="about-copy">{copy.about.map(paragraph => <p key={paragraph}>{paragraph}</p>)}</div></section>
 

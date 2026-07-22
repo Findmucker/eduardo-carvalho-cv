@@ -130,6 +130,16 @@ nav a:hover, nav a:focus-visible { color: white; }
 .skills-grid ul { list-style: none; margin: 38px 0 0; padding: 0; }
 .skills-grid li { border-top: 1px solid #b9b1a6; padding: 14px 0; font-size: 16px; }
 
+.credentials-section { background: var(--paper); color: var(--ink); }
+.credentials-section .section-kicker { color: var(--coral); }
+.credentials-grid { max-width: 1450px; margin: auto; display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid #bbb4a9; border-left: 1px solid #bbb4a9; }
+.credentials-grid article { min-height: 290px; padding: clamp(30px, 4vw, 58px); border-right: 1px solid #bbb4a9; border-bottom: 1px solid #bbb4a9; position: relative; }
+.credential-number { position: absolute; right: clamp(30px, 4vw, 58px); top: clamp(30px, 4vw, 58px); color: var(--coral); font: 650 12px/1 var(--font-geist-mono), monospace; }
+.credentials-grid article > p { margin: 0 0 42px; color: #707b84; font: 600 11px/1 var(--font-geist-mono), monospace; text-transform: uppercase; letter-spacing: .12em; }
+.credentials-grid h3 { margin: 0 0 10px; font-size: clamp(29px, 3vw, 45px); line-height: 1; letter-spacing: -.05em; }
+.credentials-grid strong { display: block; color: var(--coral); font: 600 12px/1.5 var(--font-geist-mono), monospace; text-transform: uppercase; letter-spacing: .08em; }
+.credentials-grid article > div { max-width: 570px; margin-top: 28px; color: #4d5965; font-size: 16px; line-height: 1.7; }
+
 .about-section { max-width: 1600px; margin: auto; display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(60px,10vw,170px); align-items: center; }
 .about-statement blockquote { margin: 0; font-size: clamp(45px,5vw,76px); line-height: 1.02; letter-spacing: -.06em; font-weight: 700; }
 .about-statement blockquote em { color: var(--coral); font-style: normal; }
@@ -161,6 +171,7 @@ footer a { text-align: right; color: var(--white); }
   .experience-section, .about-section { grid-template-columns: 1fr; }
   .experience-title { position: static; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
+  .credentials-grid { grid-template-columns: 1fr; }
   .contact-shape { opacity: .2; width: 60vw; }
 }
 
@@ -184,6 +195,7 @@ footer a { text-align: right; color: var(--white); }
   .project-card > p { min-height: 0; }
   .timeline article { grid-template-columns: 1fr; gap: 14px; padding-left: 26px; }
   .skills-grid { grid-template-columns: 1fr; }
+  .credentials-grid article { min-height: 0; }
   .about-copy { border-left: 0; border-top: 1px solid #34485e; padding: 34px 0 0; }
   .contact-section { min-height: 600px; }
   .contact-actions { align-items: flex-start; flex-direction: column; }
