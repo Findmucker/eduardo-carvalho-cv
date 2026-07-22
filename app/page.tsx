@@ -26,13 +26,14 @@ const content = {
     projects: [
       ["Public services", "Systems people rely on", "Built applications connected to Portuguese public-sector and mainframe services, translating complex registration flows and SOAP integrations into dependable software."],
       ["Mobility & identity", "Access at enterprise scale", "Developed identity, permission and application-management capabilities for a global automotive group, integrating external applications through a multilingual platform."],
-      ["Clinical software", "Quality built into delivery", "Delivered clinical-trial and pharmacovigilance features with BDD, TDD and traceable automated tests across a multi-application Java platform."],
+      ["Clinical software", "Traceability by design", "Refactored service layers and delivered permissions, roles, validation and auditable clinical workflows, protected by BDD, TDD and traceable automated tests."],
       ["Infrastructure data", "From sensor data to decisions", "Worked on water-network analytics that processed operational data and supported predictive models for supply, wastewater and infrastructure performance."],
+      ["Telecommunications", "Shared core, local realities", "Adapted recharge and mobile-data flows for operators in Brazil and the Middle East, combining production analysis, effort estimation and client-specific business rules."],
     ],
     experience: "Experience",
     experienceTitle: <>Built in production.<br /><em>Sharpened by change.</em></>,
     roles: [
-      ["2022 — Now", "Team IT", "Senior Software Engineer", "Feature delivery, architecture decisions, platform migrations and production problem-solving across demanding client environments. Regularly supporting team organisation, code reviews and junior engineers."],
+      ["2022 — Now", "Team IT", "Senior Software Engineer", "Delivering and modernising Java platforms across telecommunications and other demanding client environments: recharge and data-plan flows, proprietary integrations, batch processing, platform upgrades, production analysis and effort estimation. Regularly supporting technical decisions, code reviews, team organisation and junior engineers."],
       ["2020 — 2022", "ITClinical", "Software Developer", "Built clinical-trial and pharmacovigilance functionality with Java, Spring, Struts and Hibernate, using Cucumber, BDD and TDD to protect critical paths and maintain meaningful coverage."],
       ["2019 — 2020", "Alter Solutions", "Software Developer", "Developed a Java identity and access platform for the automotive sector: SSO, permissions, application management, external integrations and multilingual content across a microservice environment."],
       ["2018 — 2019", "Atos · Baseform", "Software Developer", "Delivered public-administration integrations and water-infrastructure analytics with Java, SQL, SOAP and REST. Also helped establish a shared UI framework and supported a junior colleague."],
@@ -84,13 +85,14 @@ const content = {
     projects: [
       ["Serviços públicos", "Sistemas de que as pessoas dependem", "Construção de aplicações ligadas a serviços públicos portugueses e sistemas mainframe, transformando fluxos de registo e integrações SOAP complexas em software fiável."],
       ["Mobilidade e identidade", "Acessos à escala empresarial", "Desenvolvimento de identidade, permissões e gestão de aplicações para um grupo automóvel global, integrando aplicações externas numa plataforma multilingue."],
-      ["Software clínico", "Qualidade incorporada na entrega", "Desenvolvimento de funcionalidades para ensaios clínicos e farmacovigilância com BDD, TDD e testes automatizados rastreáveis numa plataforma Java composta por várias aplicações."],
+      ["Software clínico", "Rastreabilidade desde a conceção", "Refatoração das camadas de serviço e desenvolvimento de permissões, perfis, validações e fluxos clínicos auditáveis, protegidos por BDD, TDD e testes automatizados rastreáveis."],
       ["Dados de infraestruturas", "Dos sensores às decisões", "Trabalho em análise de redes de água, processando dados operacionais e apoiando modelos preditivos para abastecimento, águas residuais e desempenho das infraestruturas."],
+      ["Telecomunicações", "Núcleo comum, realidades locais", "Adaptação de fluxos de carregamentos e planos de dados para operadores no Brasil e no Médio Oriente, combinando análise de produção, estimativas de esforço e regras de negócio específicas de cada cliente."],
     ],
     experience: "Experiência",
     experienceTitle: <>Construído em produção.<br /><em>Aperfeiçoado pela mudança.</em></>,
     roles: [
-      ["2022 — Presente", "Team IT", "Engenheiro de Software Sénior", "Desenvolvimento de funcionalidades, decisões de arquitetura, migrações de plataformas e resolução de problemas em produção em ambientes exigentes. Apoio regular à organização da equipa, revisões de código e engenheiros juniores."],
+      ["2022 — Presente", "Team IT", "Engenheiro de Software Sénior", "Desenvolvimento e modernização de plataformas Java em telecomunicações e noutros ambientes exigentes: fluxos de carregamentos e planos de dados, integrações proprietárias, processamento batch, atualizações de plataforma, análise de produção e estimativas de esforço. Apoio regular a decisões técnicas, revisões de código, organização da equipa e engenheiros juniores."],
       ["2020 — 2022", "ITClinical", "Programador de Software", "Desenvolvimento de funcionalidades de ensaios clínicos e farmacovigilância com Java, Spring, Struts e Hibernate, recorrendo a Cucumber, BDD e TDD para proteger os fluxos críticos."],
       ["2019 — 2020", "Alter Solutions", "Programador de Software", "Desenvolvimento de uma plataforma Java de identidade e acessos para o setor automóvel: SSO, permissões, gestão de aplicações, integrações externas e conteúdos multilingues num ambiente de microsserviços."],
       ["2018 — 2019", "Atos · Baseform", "Programador de Software", "Entrega de integrações para a administração pública e análise de infraestruturas de água com Java, SQL, SOAP e REST. Contributo para um framework visual comum e acompanhamento de um colega júnior."],
@@ -128,14 +130,15 @@ const projectTags = [
   ["Java", "JSF", "Spring Boot", "Microservices", "AWS"],
   ["Java", "Struts2", "Hibernate", "BDD", "Cucumber"],
   ["Java", "PL/SQL", "REST", "JavaScript", "Analytics"],
+  ["Java", "Spring Batch", "Keycloak", "Camel K", "IBM MQ"],
 ];
 
 const skillGroups = [
-  ["Java 8–21", "Spring Boot", "Spring Framework", "REST APIs", "Microservices"],
+  ["Java 8–21", "Spring Boot", "Spring Framework", "Spring Batch", "REST APIs", "Microservices"],
   ["JPA / Hibernate", "Oracle", "PostgreSQL", "MySQL", "MongoDB", "Lucene"],
   ["JUnit", "Mockito", "TDD / BDD", "Cucumber", "Code review", "Clean code"],
-  ["Docker", "Kubernetes", "Jenkins", "Maven", "Git", "Linux", "Azure", "AWS"],
-  ["SOAP", "JSP", "JSF / PrimeFaces", "Struts2", "Apache Camel", "JavaScript"],
+  ["Docker", "Kubernetes", "Jenkins", "Keycloak", "Maven", "Git", "Linux", "Azure", "AWS"],
+  ["SOAP", "JSP", "JSF / PrimeFaces", "Struts2", "Apache Camel / Camel K", "IBM MQ", "JavaScript"],
 ];
 
 export default function Home() {
